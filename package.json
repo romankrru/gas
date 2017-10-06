@@ -4,12 +4,19 @@
   "description": "An Official Page of GE Company",
   "main": "index.js",
   "scripts": {
-    "test": "eslint ./common.blocks/**/*.js"
+    "test": "eslint ./common.blocks/**/*.js",
+    "start": "./node_modules/.bin/gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:atsted/gas.git"
   },
   "author": "Acamaz Tedeti",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^7.0.0",
@@ -18,6 +25,8 @@
     "gulp-rigger": "^0.5.8",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^4.3.11",
+    "gulp-webpack": "^1.5.0",
+    "through2": "^2.0.3"
   }
 }
