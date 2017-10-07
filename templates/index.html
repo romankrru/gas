@@ -7,7 +7,204 @@
 </head>
 <body class="page">
 
-  //= sidebar/sidebar.html
+  <div class="slider">
+    <div class="slider__item">
+      <img class="slider__image" src="./img/s-1.jpg" alt="">
+      <div class="slider__content grid">
+        <div class="grid__row">
+          <div class="grid__col grid__col_4">
+          </div>
+          <div class="grid__col grid__col_8">
+            <ul class="list slider__list">
+              <li class="list__item">
+                <span>г. Ростов-на-Дону,</span><br>
+                <span>пр. Аксайский, 14, пав. 1Л</span>
+              </li>
+              <li class="list__item">
+                <a class="link link_tel" href="tel:+78632767734">+7 (863) 276-77-34</a><br>
+                <a class="link link_tel" href="tel:+79282702511">+7 (928) 270-25-11</a>
+              </li>
+              <li class="list__item">
+                <span>без выходных:</span><br>
+                <span>c 09:00 до 17:00</span>
+              </li>
+              <li class="list__item">
+                <i class="icon"></i><br>
+                <span>корзина</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid__offset grid__offset_1">
+          <h1 class="slider__title">Зима. Холод.<br>Нету горячей воды.</h1>
+          <p class="slider__description">Звучит как самый ужасный день?<br>Забудьте о ужасных днях, вместе с<br>нашими  котлами!</p>
+          <button class="button button_theme_snow">Выбрать котел</button>
+        </div>
+      </div>
+    </div>
+    <div class="slider__pointers">
+      <span class="slider__match slider__match_active"></span>
+      <span class="slider__match"></span>
+      <span class="slider__match"></span>
+      <span class="slider__match"></span>
+    </div>
+  </div>
+
+  <main class="main grid">
+    <div class="grid__row">
+      <div class="grid__col grid__col_3">
+        //= sidebar/sidebar.html
+      </div>
+      <div class="grid__col grid__col_9">
+        <div class="catalogue grid">
+          <div class="catalogue__search-bar filter grid__row">
+            <div class="filter__input grid__col grid__col_4">
+              <input class="input input_search" type="text" name="catalogue-search" placeholder="поиск">
+            </div>
+            <div class="filter__items grid__col grid__col_8">
+              <span class="filter__label">Сортировать по:</span>
+              <ul class="list filter__list">
+                <li class="list__item">
+                  <button class="button filter__button">
+                    <span class="button__inner button__inner_dashed">Типу котла</span>
+                  </button>
+                </li>
+                <li class="list__item">
+                  <button class="button filter__button">
+                    <span class="button__inner button__inner_dashed">Бо бренду</span>
+                  </button>
+                </li>
+                <li class="list__item">
+                  <button class="button filter__button">
+                    <span class="button__inner button__inner_dashed">По мощности</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="catalogue__products grid__row">
+            <div class="catalogue__item grid__col grid__col_4">
+              <div class="product">
+                <div class="product__tile">
+                  <div class="product__header">
+                    <hr class="product__line">
+                    <span class="product__label">Быстрый заказ</span>
+                  </div>
+                  <img class="product__image" src="./img/c-1.jpg" alt="">
+                  <ul class="list list_checklist product__list">
+                    <li class="list__item">открытая камера сгорания</li>
+                    <li class="list__item">отопительная площадь от 30-280 м2</li>
+                    <li class="list__item">газовый конвекционный котел</li>
+                    <li class="list__item">мощность 27.9 кВт</li>
+                    <li class="list__item">двухконтурный</li>
+                    <li class="list__item">КПД 90.3 %</li>
+                  </ul>
+                  <div>
+                    <span class="product__price">12 452</span>
+                    <a class="link product__link" href="#">Все характеристики</a>
+                    <button class="button product__button">
+                      <span class="button__icon">+</span>
+                    </button>
+                  </div>
+                </div>
+                <p class="product__name">Nike MINI 28 kW Special</p>
+                <p class="product__vendor-code">Арт. 845-874-567</p>
+              </div>
+            </div>
+            <div class="catalogue__item grid__col grid__col_4">
+              <div class="product">
+                <div class="product__tile">
+                  <div class="product__header">
+                    <hr class="product__line">
+                    <span class="product__label">Быстрый заказ</span>
+                  </div>
+                  <img class="product__image" src="./img/c-2.jpg" alt="">
+                  <ul class="list list_checklist product__list">
+                    <li class="list__item">открытая камера сгорания</li>
+                    <li class="list__item">отопительная площадь от 30-280 м2</li>
+                    <li class="list__item">газовый конвекционный котел</li>
+                    <li class="list__item">мощность 27.9 кВт</li>
+                    <li class="list__item">двухконтурный</li>
+                    <li class="list__item">КПД 90.3 %</li>
+                  </ul>
+                  <div>
+                    <span class="product__price">12 452</span>
+                    <a class="link product__link" href="#">Все характеристики</a>
+                    <button class="button product__button">
+                      <span class="button__icon">+</span>
+                    </button>
+                  </div>
+                </div>
+                <p class="product__name">Nike MINI 28 kW Special</p>
+                <p class="product__vendor-code">Арт. 845-874-567</p>
+              </div>
+            </div>
+            <div class="catalogue__item grid__col grid__col_4">
+              <div class="product">
+                <div class="product__tile">
+                  <div class="product__header">
+                    <hr class="product__line">
+                    <span class="product__label">Быстрый заказ</span>
+                  </div>
+                  <img class="product__image" src="./img/c-3.jpg" alt="">
+                  <ul class="list list_checklist product__list">
+                    <li class="list__item">открытая камера сгорания</li>
+                    <li class="list__item">отопительная площадь от 30-280 м2</li>
+                    <li class="list__item">газовый конвекционный котел</li>
+                    <li class="list__item">мощность 27.9 кВт</li>
+                    <li class="list__item">двухконтурный</li>
+                    <li class="list__item">КПД 90.3 %</li>
+                  </ul>
+                  <div>
+                    <span class="product__price">12 452</span>
+                    <a class="link product__link" href="#">Все характеристики</a>
+                    <button class="button product__button">
+                      <span class="button__icon">+</span>
+                    </button>
+                  </div>
+                </div>
+                <p class="product__name">Nike MINI 28 kW Special</p>
+                <p class="product__vendor-code">Арт. 845-874-567</p>
+              </div>
+            </div>
+            <div class="catalogue__item grid__col grid__col_4">
+              <div class="product">
+                <div class="product__tile">
+                  <div class="product__header">
+                    <hr class="product__line">
+                    <span class="product__label">Быстрый заказ</span>
+                  </div>
+                  <img class="product__image" src="./img/c-1.jpg" alt="">
+                  <ul class="list list_checklist product__list">
+                    <li class="list__item">открытая камера сгорания</li>
+                    <li class="list__item">отопительная площадь от 30-280 м2</li>
+                    <li class="list__item">газовый конвекционный котел</li>
+                    <li class="list__item">мощность 27.9 кВт</li>
+                    <li class="list__item">двухконтурный</li>
+                    <li class="list__item">КПД 90.3 %</li>
+                  </ul>
+                  <div>
+                    <span class="product__price">12 452</span>
+                    <a class="link product__link" href="#">Все характеристики</a>
+                    <button class="button product__button">
+                      <span class="button__icon">+</span>
+                    </button>
+                  </div>
+                </div>
+                <p class="product__name">Nike MINI 28 kW Special</p>
+                <p class="product__vendor-code">Арт. 845-874-567</p>
+              </div>
+            </div>
+          </div>
+          <div class="catalogue__loader">
+            <button class="button button_theme_coal">
+              <span class="button__inner">Больше котлов</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   //= order-form/order-form.html
   //= footer/footer.html
 

@@ -1,0 +1,30 @@
+.filter
+  font-size 14px
+  font-style italic
+  &__items
+  &__input
+    padding 0.25em 1em
+  &__items
+    display flex
+    align-items center
+  &__input
+    position relative
+    &:after
+      content ''
+      top 50%
+      right 28px
+      width 17px
+      height @width
+      background url('../img/search.png') no-repeat
+      display block
+      position absolute
+      transform translateY(-50%)
+    & > .input
+      padding-right 44px
+  &__label
+    flex 1
+  &__list
+    flex 2
+    & > .list__item
+      margin-right 2em
+      display inline-block

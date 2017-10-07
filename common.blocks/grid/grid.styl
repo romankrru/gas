@@ -1,0 +1,17 @@
+flex-width(w)
+  max-width w 
+  min-width w
+  
+.grid
+  &__row
+    width 100%
+    display flex
+  &__col
+    flex 1
+    for $i in (1..12)
+      &_{$i}
+        flex-width(($i / 12) * 100%)
+  &__offset
+    for $i in (1..12)
+      &_{$i}
+        margin-left ($i / 12) * 100%

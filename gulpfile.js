@@ -21,7 +21,7 @@ const path = {
   style: {
     src: './media/style/*.styl',
     dist: './public/css',
-    watch: ['./common.blocks/**/*.styl', './media/style/*.styl']
+    watch: ['./common.blocks/**/*.styl', './index.blocks/**/*.styl', './media/style/*.styl']
   },
   image: {
     src: ['./media/image/**/*.jpg', './media/image/**/*.png'],
@@ -61,10 +61,11 @@ gulp.task('build:html', buildHMTL);
 gulp.task('build:css', buildCSS);
 gulp.task('build:img', optimizeImages);
 
-gulp.task('serve', ['build:html', 'build:css'], () => {
+gulp.task('serve', ['build:img', 'build:html', 'build:css'], () => {
   browserSync.init({ server: path.html.dist });
+  watch(path.image.src, optimizeImages);
   watch(path.html.watch, buildHMTL);
   watch(path.style.watch, buildCSS);
 });
 
-gulp.task('default', ['build:img', 'serve']);
+gulp.task('default', ['serve']);

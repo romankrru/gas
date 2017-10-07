@@ -1,0 +1,25 @@
+.checkbox
+  margin 0.75em 0
+  &__input
+    display none
+  &__label
+    padding-left 2.25em
+    font-size 14px
+    cursor pointer
+    position relative
+    user-select none
+    &:before
+      content ''
+      top 50%
+      width 16px
+      height @width
+      display block
+      border 1px solid
+      border-radius 2px
+      position absolute
+      transform translateY(-50%)
+  &__input:checked + &__label
+    font-weight 600
+    &:before
+      background url('../img/check-mark.png') no-repeat
+      background-position center

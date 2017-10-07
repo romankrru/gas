@@ -1,3 +1,32 @@
 .sidebar
   margin 0
   padding 0
+  &__checklist
+    margin-top 1.35em
+    margin-left -0.25em
+    display none
+  &__producer
+    font-size 18px
+    font-weight 800
+    text-transform uppercase
+    display block
+  &__list
+    & > .list__item
+      margin-bottom 1.65em
+      padding-left 2em
+      position relative
+      &:before
+        content '+'
+        top 0
+        left 0
+        width 21px
+        font-size 2.2rem
+        line-height 18px
+        text-align center
+        position absolute
+        display block
+      &_active 
+        &:before
+          content '\2013'
+        & > .sidebar__checklist
+          display block
