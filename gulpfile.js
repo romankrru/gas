@@ -7,10 +7,12 @@ const concat = require('gulp-concat');
 const imageMin = require('gulp-imagemin');
 const rename = require('gulp-rename');
 const rigger = require('gulp-rigger');
+const sftp = require('gulp-sftp');
 const stylus = require('gulp-stylus');
 const uglify = require('gulp-uglify');
 const watch = require('gulp-watch');
 const webpack = require('gulp-webpack');
+
 
 const path = {
   html: {
@@ -57,9 +59,15 @@ function optimizeImages() {
     .pipe(gulp.dest(path.image.dist));
 }
 
+function deploy() {
+  return gulp.src(`${path.html.dist}/**/*`)
+    .pipe(sftp(require('./remote_config')));
+}
+
 gulp.task('build:html', buildHMTL);
 gulp.task('build:css', buildCSS);
 gulp.task('build:img', optimizeImages);
+gulp.task('deploy', deploy);
 
 gulp.task('serve', ['build:img', 'build:html', 'build:css'], () => {
   browserSync.init({ server: path.html.dist });
