@@ -19,33 +19,45 @@
     margin 1em auto
     display block      
   &__button
+    right 1.25rem
+    bottom 0.75em
     width 36px
     height @width
-    border 2px solid
+    border 2px solid #343637
     border-radius 50%
     background #fff
+    position absolute
     & > .button__icon
       font-size 2.2em
       line-height 27px
       display inline-block
+    &:hover
+      color #fff
+      background #343637
   &__link
-    display inline-block
+    display none
     border-bottom 1px solid
     font-size 14px
     font-weight 600
   &__list
     font-size 14px
-    display block
+    display none
   &__tile
-    padding 1.35rem 1.85rem
+    padding 1.15rem 1.85rem
+    padding-top 2.35rem
     background #fff
     box-shadow 0 2px 5px rgba(0,0,0,.22)
     transition all 200ms ease-in-out
+    position relative
     &:hover
       box-shadow 0 6px 18px rgba(0,0,0,.22)
   &__header
-    position relative
+    top 1.35rem
+    left 0
+    width 100%
+    position absolute
   &__label
+    padding-left 1.85rem
     padding-right 1em
     display inline-block
     font-size 14px
