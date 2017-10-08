@@ -3,6 +3,7 @@
 <head>
   <title></title>
   <meta charset="utf-8">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="./css/index.min.css">
 </head>
 <body class="page">
@@ -368,6 +369,63 @@
   //= order-form/order-form.html
   //= footer/footer.html
   //= menu/menu.html
+
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.waypoints.min.js"></script>
+
+
+  <script type="text/javascript">
+    $(function () {
+      'use strict';
+
+      var $menu = $('.menu'),
+          $page = $('.page');
+      $('.page__menu-trigger').on('click', function (event) {
+        $page.addClass('page_fixed');
+        $menu.fadeIn();
+      });
+      $('.menu__closer').on('click', function (event) {
+        $page.removeClass('page_fixed');
+        $menu.fadeOut();
+      });
+
+      var $sidebar = $('.sidebar'),
+          wp1 = new Waypoint({
+            element: document.querySelector('.main'),
+            handler: function (direction) {
+              if (direction === 'down') {
+                $sidebar.css({
+                  position: 'fixed',
+                  top: '4em'
+                });
+              } else if (direction === 'up') {
+                $sidebar.css({
+                  position: 'static'
+                });
+              }
+            }
+          }),
+          wp2 = new Waypoint({
+            element: document.querySelector('.order-form'),
+            handler: function (direction) {
+              if (direction === 'down') {
+                $sidebar.css({
+                  position: 'absolute',
+                  top: 'auto',
+                  bottom: 0
+                });
+              } else if (direction === 'up') {
+                $sidebar.css({
+                  position: 'fixed',
+                  top: '4em'
+                });
+              }
+            },
+            offset: '100%'
+          });
+      $sidebar.parent().css({position: 'relative'})
+    });
+  </script>
 
 </body>
 </html>
