@@ -390,6 +390,7 @@
       });
 
       var $sidebar = $('.sidebar'),
+          $slash = $('.main__bg'),
           wp1 = new Waypoint({
             element: document.querySelector('.main'),
             handler: function (direction) {
@@ -398,10 +399,16 @@
                   position: 'fixed',
                   top: '4em'
                 });
+                $slash.css({
+                  position: 'fixed'
+                })
               } else if (direction === 'up') {
                 $sidebar.css({
                   position: 'static'
                 });
+                $slash.css({
+                  position: 'absolute',
+                })
               }
             }
           }),
@@ -421,7 +428,9 @@
                 });
               }
             },
-            offset: '100%'
+            offset: function () {
+              return $sidebar.height() + 128;
+            }
           });
       $sidebar.parent().css({position: 'relative'})
     });

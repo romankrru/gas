@@ -30,15 +30,31 @@
       position absolute
       background #fff
       display block
-  &__list
+  &__list  
     font-size 30px
     font-weight 700
     text-transform uppercase
     & .list__link
-      border-left 3px solid transparent
-      &:hover
-      &_active
-        border-left 3px solid #fff
+      padding-left 1em
+      color #fff
+      position relative
+      overflow hidden
+      transition color .3s cubic-bezier(0.11, 0.7, 0, 1)
+      &:after
+        content ''
+        top 0
+        left 0
+        width 4px
+        height 100%
+        background-color #fff
+        border-left 1px solid #222
+        transform translate3d(0,-101%,0)
+        transition transform .3s cubic-bezier(0.11, 0.7, 0, 1)
+        position absolute
+        display block
+      &_active, &:hover
+        &:after
+          transform: translate3d(0,0,0)
   &__closer
     top 50%
     right 4%

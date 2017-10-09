@@ -3,16 +3,35 @@ $bgColor = #5d5e5f
 .footer
   font-size 20px
   background $bgColor
+  position relative
+  padding 1.125em 0
   &__menu
     width 100%
     margin 0
-    padding 0
     display flex
     justify-content space-around
     list-style-type none
   &__link
-    padding 1.125em 0
+    padding 0 6px
     color #fff
     opacity .21
     display block
+    line-height 1.8
     text-align center
+    transition color .3s cubic-bezier(0.11, 0.7, 0, 1)
+    position relative
+    overflow hidden
+    &:after
+      content ''
+      left 0
+      bottom 0
+      display block
+      width 100%
+      height 2px
+      background-color #fff
+      border-bottom 1px solid #222
+      transform translate3d(-101%,0,0)
+      transition transform .3s cubic-bezier(0.11, 0.7, 0, 1)
+      position absolute
+    &:hover:after
+      transform translate3d(0,0,0)

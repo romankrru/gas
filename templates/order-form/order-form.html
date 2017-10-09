@@ -1,26 +1,28 @@
 <section class="section order-form">
-  <form class="order-form__form grid">
-    <div class="grid__offset grid__offset_2">
-      <h2 class="order-form__title">Необходима помощь в подборе<br>газового оборудования?</h2>
-    </div>
-    <div class="grid__row">
-      <div class="grid__col grid__col_3 grid__offset grid__offset_1">
-        <input class="input input_transparent" type="text" name="name" placeholder="Имя">
+  <div class="section__inner">
+    <form class="order-form__form grid">
+      <div class="grid__offset grid__offset_1">
+        <h2 class="order-form__title">Необходима помощь в подборе<br>газового оборудования?</h2>
       </div>
-      <div class="grid__col grid__col_3">
-        <input class="input input_transparent" type="tel" name="phone" placeholder="Телефон">
+      <div class="grid__row">
+        <div class="grid__col grid__col_4">
+          <input class="input input_transparent" type="text" name="name" placeholder="Имя">
+        </div>
+        <div class="grid__col grid__col_4">
+          <input class="input input_transparent" type="tel" name="phone" placeholder="Телефон">
+        </div>
+        <div class="grid__col grid__col_4">
+          <button class="button button_theme_snow order-form__submit">
+            <span class="button__inner">Оставить заявку</span>
+          </button>
+        </div>
       </div>
-      <div class="grid__col grid__col_2 grid__offset grid__offset_1">
-        <button class="button button_theme_snow order-form__submit">
-          <span class="button__inner">Оставить заявку</span>
-        </button>
+      <div class="grid__offset grid__offset_1">
+        <p class="checkbox checkbox_transparent">
+          <input id="privacy-policy" class="checkbox__input checkbox__input_transparent" type="checkbox" name="">
+          <label for="privacy-policy" class="checkbox__label">Я принимаю условия пользовательского соглашения.</label>
+        </p>
       </div>
-    </div>
-    <div class="grid__offset grid__offset_2">
-      <p class="checkbox checkbox_transparent">
-        <input id="privacy-policy" class="checkbox__input checkbox__input_transparent" type="checkbox" name="">
-        <label for="privacy-policy" class="checkbox__label">Я принимаю условия пользовательского соглашения.</label>
-      </p>
-    </div>
-  </form>
+    </form>
+  </div>
 </section>
