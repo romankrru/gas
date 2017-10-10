@@ -50,14 +50,17 @@
     'use strict';
 
     var $menu = $('.menu'),
-        $page = $('.page');
+        $header = $('.header'),
+        $content = $('.page__content');
     $('.page__menu-trigger').on('click', function (event) {
-      $page.addClass('page_fixed');
+      $header.css('display', 'none');
+      $content.addClass('page__content_blur');
       $menu.fadeIn();
     });
     $('.menu__closer').on('click', function (event) {
-      $page.removeClass('page_fixed');
       $menu.fadeOut();
+      $header.css('display', 'block');
+      $content.removeClass('page__content_blur')
     });
 
     var $sidebar = $('.sidebar'),
@@ -68,7 +71,7 @@
             if (direction === 'down') {
               $sidebar.css({
                 position: 'fixed',
-                top: '4em'
+                top: '144px'
               });
               $slash.css({
                 position: 'fixed'
@@ -81,7 +84,8 @@
                 position: 'absolute',
               })
             }
-          }
+          },
+          offset: 78
         }),
         wp2 = new Waypoint({
           element: document.querySelector('.order-form'),
@@ -95,12 +99,12 @@
             } else if (direction === 'up') {
               $sidebar.css({
                 position: 'fixed',
-                top: '4em'
+                top: '144px'
               });
             }
           },
           offset: function () {
-            return $sidebar.height() + 128;
+            return $sidebar.height() + 206;
           }
         });
     $sidebar.parent().css({position: 'relative'})

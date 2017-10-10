@@ -4,10 +4,13 @@
   &__checklist
     margin-top 1.35em
     margin-left -0.25em
-    opacity .65
     display none
-    & .checkbox__label:hover
+    & .checkbox__label
       font-weight 600
+      opacity .65
+      transition all 200ms ease-in-out
+      &:hover
+        opacity 1
   &__producer
     font-size 18px
     font-weight 800

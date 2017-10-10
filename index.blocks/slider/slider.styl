@@ -1,5 +1,6 @@
 .slider
   position relative
+  z-index 1
   &__item
     color #fff
   &__content
@@ -24,3 +25,22 @@
     margin-bottom 1.5em
     font-size 20px
     line-height 1.65
+  &__pointers
+    left 50%
+    bottom 0
+    position absolute
+  &__match
+  &__location
+    bottom 1.5rem
+    position absolute
+  &__match
+    width 2px
+    height 14px
+    display block
+    background #fff
+    transition height .3s cubic-bezier(.11,.7,0,1)
+    &:hover
+    &_active
+      height 28px
+  &__location
+    right 3rem
