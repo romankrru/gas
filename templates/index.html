@@ -12,35 +12,10 @@
 </head>
 <body class="page">
 
-  <div class="slider">
+  <div id="slider" class="slider">
     <div class="slider__item">
       <img class="slider__image" src="./img/s-1.jpg" alt="">
       <div class="slider__content grid">
-        <div class="grid__row grid__row_middle">
-          <div class="grid__col grid__col_4">
-            <img class="logo slider__logo" src="./img/logo.png" alt="Logo">
-          </div>
-          <div class="grid__col grid__col_8">
-            <ul class="list slider__list">
-              <li class="list__item">
-                <span>г. Ростов-на-Дону,</span><br>
-                <span>пр. Аксайский, 14, пав. 1Л</span>
-              </li>
-              <li class="list__item">
-                <a class="link link_tel" href="tel:+78632767734">+7 (863) 276-77-34</a><br>
-                <a class="link link_tel" href="tel:+79282702511">+7 (928) 270-25-11</a>
-              </li>
-              <li class="list__item">
-                <span>без выходных:</span><br>
-                <span>c 09:00 до 17:00</span>
-              </li>
-              <li class="list__item">
-                <i class="icon"></i><br>
-                <span>корзина</span>
-              </li>
-            </ul>
-          </div>
-        </div>
         <div class="grid__offset grid__offset_1">
           <h1 class="slider__title">Зима. Холод.<br>Нету горячей воды.</h1>
           <p class="slider__description">Звучит как самый ужасный день?<br>Забудьте о ужасных днях, вместе с<br>нашими  котлами!</p>
@@ -370,9 +345,57 @@
       </div>
     </div>
   </main>
+
+  <header class="header">
+    <div class="grid__row grid__row_middle">
+      <div class="grid__col grid__col_4">
+        <img class="logo header__logo" src="./img/logo.png" alt="Logo">
+      </div>
+      <div class="grid__col grid__col_8">
+        <ul class="list header__list">
+          <li class="list__item">
+            <span>г. Ростов-на-Дону,</span><br>
+            <span>пр. Аксайский, 14, пав. 1Л</span>
+          </li>
+          <li class="list__item">
+            <a class="link link_tel" href="tel:+78632767734">+7 (863) 276-77-34</a><br>
+            <a class="link link_tel" href="tel:+79282702511">+7 (928) 270-25-11</a>
+          </li>
+          <li class="list__item">
+            <span>без выходных:</span><br>
+            <span>c 09:00 до 17:00</span>
+          </li>
+          <li class="list__item">
+            <i class="icon icon_basket header__basket-icon"></i>
+            <span>корзина</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
   //= order-form/order-form.html
   //= footer/footer.html
   //= menu/menu.html
+
+  <script type="text/javascript">
+    $(function () {
+      'use strict';
+      var
+        $header = $('.header'),
+        $window = $(window);
+      // $window.scroll(function (event) {
+      //   console.log($window.scrollTop());
+      // });
+      new Waypoint({
+        element: '#slider',
+        handler: function (direction) {
+          if (direction === 'down') $header.addClass('header_coal');
+          else if (direction === 'up') $header.removeClass('header_coal');
+        },
+        offset: -20
+      });
+    });
+  </script>
 
 </body>
 </html>

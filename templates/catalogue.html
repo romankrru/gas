@@ -4,6 +4,7 @@
   <title></title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="./css/catalogue.min.css">
+
 </head>
 <body class="page">
 
@@ -13,324 +14,329 @@
     </filter>
   </svg>
 
-  <main class="main grid">
-    <div class="main__bg"></div>
-    <div class="main__inner grid__row">
-      <div class="grid__col grid__col_3">
-        //= sidebar/sidebar.html
-      </div>
-      <div class="grid__col grid__col_9">
-        <div class="catalogue grid">
-          <div class="catalogue__search-bar filter grid__row">
-            <div class="filter__input grid__col grid__col_4">
-              <input class="input input_search" type="text" name="catalogue-search" placeholder="поиск">
-            </div>
-            <div class="filter__items grid__col grid__col_8">
-              <span class="filter__label">Сортировать по:</span>
-              <ul class="list filter__list">
-                <li class="list__item">
-                  <button class="button filter__button">
-                    <span class="button__inner button__inner_dashed">Типу котла</span>
-                  </button>
-                </li>
-                <li class="list__item">
-                  <button class="button filter__button">
-                    <span class="button__inner button__inner_dashed">Бо бренду</span>
-                  </button>
-                </li>
-                <li class="list__item">
-                  <button class="button filter__button">
-                    <span class="button__inner button__inner_dashed">По мощности</span>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="catalogue__products grid__row">
-            <div class="catalogue__item grid__col grid__col_4">
-              <div class="product">
-                <div class="product__tile">
-                  <div class="product__header">
-                    <hr class="product__line">
-                    <span class="product__label">Быстрый заказ</span>
-                  </div>
-                  <img class="product__image" src="./img/c-1.jpg" alt="">
-                  <div class="product__details">
-                    <ul class="list list_checklist product__list">
-                      <li class="list__item">открытая камера сгорания</li>
-                      <li class="list__item">отопительная площадь от 30-280 м2</li>
-                      <li class="list__item">газовый конвекционный котел</li>
-                      <li class="list__item">мощность 27.9 кВт</li>
-                      <li class="list__item">двухконтурный</li>
-                      <li class="list__item">КПД 90.3 %</li>
-                    </ul>
-                  </div>
-                  <div class="product__tools">
-                    <span class="product__price">12 452</span>
-                    <a class="link product__link" href="#">Все характеристики</a>
-                    <button class="button product__button">
-                      <span class="button__icon">+</span>
+  <div class="page__content page__content_blur">
+    <main class="main grid">
+      <div class="main__bg"></div>
+      <div class="main__inner grid__row">
+        <div class="grid__col grid__col_3">
+          //= sidebar/sidebar.html
+        </div>
+        <div class="grid__col grid__col_9">
+          <div class="catalogue grid">
+            <div class="catalogue__search-bar filter grid__row">
+              <div class="filter__input grid__col grid__col_4">
+                <input class="input input_search" type="text" name="catalogue-search" placeholder="поиск">
+              </div>
+              <div class="filter__items grid__col grid__col_8">
+                <span class="filter__label">Сортировать по:</span>
+                <ul class="list filter__list">
+                  <li class="list__item">
+                    <button class="button filter__button">
+                      <span class="button__inner button__inner_dashed">Типу котла</span>
                     </button>
-                  </div>
-                </div>
-                <p class="product__name">Nike MINI 28 kW<br>Special</p>
-                <p class="product__vendor-code">Арт. 845-874-567</p>
+                  </li>
+                  <li class="list__item">
+                    <button class="button filter__button">
+                      <span class="button__inner button__inner_dashed">Бо бренду</span>
+                    </button>
+                  </li>
+                  <li class="list__item">
+                    <button class="button filter__button">
+                      <span class="button__inner button__inner_dashed">По мощности</span>
+                    </button>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="catalogue__item grid__col grid__col_4">
-              <div class="product">
-                <div class="product__tile">
-                  <div class="product__header">
-                    <hr class="product__line">
-                    <span class="product__label">Быстрый заказ</span>
+            <div class="catalogue__products grid__row">
+              <div class="catalogue__item grid__col grid__col_4">
+                <div class="product">
+                  <div class="product__tile">
+                    <div class="product__header">
+                      <hr class="product__line">
+                      <span class="product__label">Быстрый заказ</span>
+                    </div>
+                    <img class="product__image" src="./img/c-1.jpg" alt="">
+                    <div class="product__details">
+                      <ul class="list list_checklist product__list">
+                        <li class="list__item">открытая камера сгорания</li>
+                        <li class="list__item">отопительная площадь от 30-280 м2</li>
+                        <li class="list__item">газовый конвекционный котел</li>
+                        <li class="list__item">мощность 27.9 кВт</li>
+                        <li class="list__item">двухконтурный</li>
+                        <li class="list__item">КПД 90.3 %</li>
+                      </ul>
+                    </div>
+                    <div class="product__tools">
+                      <span class="product__price">12 452</span>
+                      <a class="link product__link" href="#">Все характеристики</a>
+                      <button class="button product__button">
+                        <span class="button__icon">+</span>
+                      </button>
+                    </div>
                   </div>
-                  <img class="product__image" src="./img/c-2.jpg" alt="">
-                  <div class="product__details">
-                    <ul class="list list_checklist product__list">
-                      <li class="list__item">открытая камера сгорания</li>
-                      <li class="list__item">отопительная площадь от 30-280 м2</li>
-                      <li class="list__item">газовый конвекционный котел</li>
-                      <li class="list__item">мощность 27.9 кВт</li>
-                      <li class="list__item">двухконтурный</li>
-                      <li class="list__item">КПД 90.3 %</li>
-                    </ul>
-                  </div>
-                  <div class="product__tools">
-                    <span class="product__price">12 452</span>
-                    <a class="link product__link" href="#">Все характеристики</a>
-                    <button class="button product__button">
-                      <span class="button__icon">+</span>
-                    </button>
-                  </div>
+                  <p class="product__name">Nike MINI 28 kW<br>Special</p>
+                  <p class="product__vendor-code">Арт. 845-874-567</p>
                 </div>
-                <p class="product__name">Напольные котлы<br>Ангара-Люкс</p>
-                <p class="product__vendor-code">Арт. 845-874-567</p>
+              </div>
+              <div class="catalogue__item grid__col grid__col_4">
+                <div class="product">
+                  <div class="product__tile">
+                    <div class="product__header">
+                      <hr class="product__line">
+                      <span class="product__label">Быстрый заказ</span>
+                    </div>
+                    <img class="product__image" src="./img/c-2.jpg" alt="">
+                    <div class="product__details">
+                      <ul class="list list_checklist product__list">
+                        <li class="list__item">открытая камера сгорания</li>
+                        <li class="list__item">отопительная площадь от 30-280 м2</li>
+                        <li class="list__item">газовый конвекционный котел</li>
+                        <li class="list__item">мощность 27.9 кВт</li>
+                        <li class="list__item">двухконтурный</li>
+                        <li class="list__item">КПД 90.3 %</li>
+                      </ul>
+                    </div>
+                    <div class="product__tools">
+                      <span class="product__price">12 452</span>
+                      <a class="link product__link" href="#">Все характеристики</a>
+                      <button class="button product__button">
+                        <span class="button__icon">+</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="product__name">Напольные котлы<br>Ангара-Люкс</p>
+                  <p class="product__vendor-code">Арт. 845-874-567</p>
+                </div>
+              </div>
+              <div class="catalogue__item grid__col grid__col_4">
+                <div class="product">
+                  <div class="product__tile">
+                    <div class="product__header">
+                      <hr class="product__line">
+                      <span class="product__label">Быстрый заказ</span>
+                    </div>
+                    <img class="product__image" src="./img/c-3.jpg" alt="">
+                    <div class="product__details">
+                      <ul class="list list_checklist product__list">
+                        <li class="list__item">открытая камера сгорания</li>
+                        <li class="list__item">отопительная площадь от 30-280 м2</li>
+                        <li class="list__item">газовый конвекционный котел</li>
+                        <li class="list__item">мощность 27.9 кВт</li>
+                        <li class="list__item">двухконтурный</li>
+                        <li class="list__item">КПД 90.3 %</li>
+                      </ul>
+                    </div>
+                    <div class="product__tools">
+                      <span class="product__price">12 452</span>
+                      <a class="link product__link" href="#">Все характеристики</a>
+                      <button class="button product__button">
+                        <span class="button__icon">+</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="product__name">Газовые колонки<br>Ангара-Люкс</p>
+                  <p class="product__vendor-code">Арт. 845-874-567</p>
+                </div>
+              </div>
+              <div class="catalogue__item grid__col grid__col_4">
+                <div class="product">
+                  <div class="product__tile">
+                    <div class="product__header">
+                      <hr class="product__line">
+                      <span class="product__label">Быстрый заказ</span>
+                    </div>
+                    <img class="product__image" src="./img/c-1.jpg" alt="">
+                    <div class="product__details">
+                      <ul class="list list_checklist product__list">
+                        <li class="list__item">открытая камера сгорания</li>
+                        <li class="list__item">отопительная площадь от 30-280 м2</li>
+                        <li class="list__item">газовый конвекционный котел</li>
+                        <li class="list__item">мощность 27.9 кВт</li>
+                        <li class="list__item">двухконтурный</li>
+                        <li class="list__item">КПД 90.3 %</li>
+                      </ul>
+                    </div>
+                    <div class="product__tools">
+                      <span class="product__price">12 452</span>
+                      <a class="link product__link" href="#">Все характеристики</a>
+                      <button class="button product__button">
+                        <span class="button__icon">+</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="product__name">Nike MINI 28 kW<br>Special</p>
+                  <p class="product__vendor-code">Арт. 845-874-567</p>
+                </div>
+              </div>
+              <div class="catalogue__item grid__col grid__col_4">
+                <div class="product">
+                  <div class="product__tile">
+                    <div class="product__header">
+                      <hr class="product__line">
+                      <span class="product__label">Быстрый заказ</span>
+                    </div>
+                    <img class="product__image" src="./img/c-2.jpg" alt="">
+                    <div class="product__details">
+                      <ul class="list list_checklist product__list">
+                        <li class="list__item">открытая камера сгорания</li>
+                        <li class="list__item">отопительная площадь от 30-280 м2</li>
+                        <li class="list__item">газовый конвекционный котел</li>
+                        <li class="list__item">мощность 27.9 кВт</li>
+                        <li class="list__item">двухконтурный</li>
+                        <li class="list__item">КПД 90.3 %</li>
+                      </ul>
+                    </div>
+                    <div class="product__tools">
+                      <span class="product__price">12 452</span>
+                      <a class="link product__link" href="#">Все характеристики</a>
+                      <button class="button product__button">
+                        <span class="button__icon">+</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="product__name">Напольные котлы<br>Ангара-Люкс</p>
+                  <p class="product__vendor-code">Арт. 845-874-567</p>
+                </div>
+              </div>
+              <div class="catalogue__item grid__col grid__col_4">
+                <div class="product">
+                  <div class="product__tile">
+                    <div class="product__header">
+                      <hr class="product__line">
+                      <span class="product__label">Быстрый заказ</span>
+                    </div>
+                    <img class="product__image" src="./img/c-3.jpg" alt="">
+                    <div class="product__details">
+                      <ul class="list list_checklist product__list">
+                        <li class="list__item">открытая камера сгорания</li>
+                        <li class="list__item">отопительная площадь от 30-280 м2</li>
+                        <li class="list__item">газовый конвекционный котел</li>
+                        <li class="list__item">мощность 27.9 кВт</li>
+                        <li class="list__item">двухконтурный</li>
+                        <li class="list__item">КПД 90.3 %</li>
+                      </ul>
+                    </div>
+                    <div class="product__tools">
+                      <span class="product__price">12 452</span>
+                      <a class="link product__link" href="#">Все характеристики</a>
+                      <button class="button product__button">
+                        <span class="button__icon">+</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="product__name">Газовые колонки<br>Ангара-Люкс</p>
+                  <p class="product__vendor-code">Арт. 845-874-567</p>
+                </div>
+              </div>
+              <div class="catalogue__item grid__col grid__col_4">
+                <div class="product">
+                  <div class="product__tile">
+                    <div class="product__header">
+                      <hr class="product__line">
+                      <span class="product__label">Быстрый заказ</span>
+                    </div>
+                    <img class="product__image" src="./img/c-1.jpg" alt="">
+                    <div class="product__details">
+                      <ul class="list list_checklist product__list">
+                        <li class="list__item">открытая камера сгорания</li>
+                        <li class="list__item">отопительная площадь от 30-280 м2</li>
+                        <li class="list__item">газовый конвекционный котел</li>
+                        <li class="list__item">мощность 27.9 кВт</li>
+                        <li class="list__item">двухконтурный</li>
+                        <li class="list__item">КПД 90.3 %</li>
+                      </ul>
+                    </div>
+                    <div class="product__tools">
+                      <span class="product__price">12 452</span>
+                      <a class="link product__link" href="#">Все характеристики</a>
+                      <button class="button product__button">
+                        <span class="button__icon">+</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="product__name">Nike MINI 28 kW<br>Special</p>
+                  <p class="product__vendor-code">Арт. 845-874-567</p>
+                </div>
+              </div>
+              <div class="catalogue__item grid__col grid__col_4">
+                <div class="product">
+                  <div class="product__tile">
+                    <div class="product__header">
+                      <hr class="product__line">
+                      <span class="product__label">Быстрый заказ</span>
+                    </div>
+                    <img class="product__image" src="./img/c-2.jpg" alt="">
+                    <div class="product__details">
+                      <ul class="list list_checklist product__list">
+                        <li class="list__item">открытая камера сгорания</li>
+                        <li class="list__item">отопительная площадь от 30-280 м2</li>
+                        <li class="list__item">газовый конвекционный котел</li>
+                        <li class="list__item">мощность 27.9 кВт</li>
+                        <li class="list__item">двухконтурный</li>
+                        <li class="list__item">КПД 90.3 %</li>
+                      </ul>
+                    </div>
+                    <div class="product__tools">
+                      <span class="product__price">12 452</span>
+                      <a class="link product__link" href="#">Все характеристики</a>
+                      <button class="button product__button">
+                        <span class="button__icon">+</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="product__name">Напольные котлы<br>Ангара-Люкс</p>
+                  <p class="product__vendor-code">Арт. 845-874-567</p>
+                </div>
+              </div>
+              <div class="catalogue__item grid__col grid__col_4">
+                <div class="product">
+                  <div class="product__tile">
+                    <div class="product__header">
+                      <hr class="product__line">
+                      <span class="product__label">Быстрый заказ</span>
+                    </div>
+                    <img class="product__image" src="./img/c-3.jpg" alt="">
+                    <div class="product__details">
+                      <ul class="list list_checklist product__list">
+                        <li class="list__item">открытая камера сгорания</li>
+                        <li class="list__item">отопительная площадь от 30-280 м2</li>
+                        <li class="list__item">газовый конвекционный котел</li>
+                        <li class="list__item">мощность 27.9 кВт</li>
+                        <li class="list__item">двухконтурный</li>
+                        <li class="list__item">КПД 90.3 %</li>
+                      </ul>
+                    </div>
+                    <div class="product__tools">
+                      <span class="product__price">12 452</span>
+                      <a class="link product__link" href="#">Все характеристики</a>
+                      <button class="button product__button">
+                        <span class="button__icon">+</span>
+                      </button>
+                    </div>
+                  </div>
+                  <p class="product__name">Газовые колонки<br>Ангара-Люкс</p>
+                  <p class="product__vendor-code">Арт. 845-874-567</p>
+                </div>
               </div>
             </div>
-            <div class="catalogue__item grid__col grid__col_4">
-              <div class="product">
-                <div class="product__tile">
-                  <div class="product__header">
-                    <hr class="product__line">
-                    <span class="product__label">Быстрый заказ</span>
-                  </div>
-                  <img class="product__image" src="./img/c-3.jpg" alt="">
-                  <div class="product__details">
-                    <ul class="list list_checklist product__list">
-                      <li class="list__item">открытая камера сгорания</li>
-                      <li class="list__item">отопительная площадь от 30-280 м2</li>
-                      <li class="list__item">газовый конвекционный котел</li>
-                      <li class="list__item">мощность 27.9 кВт</li>
-                      <li class="list__item">двухконтурный</li>
-                      <li class="list__item">КПД 90.3 %</li>
-                    </ul>
-                  </div>
-                  <div class="product__tools">
-                    <span class="product__price">12 452</span>
-                    <a class="link product__link" href="#">Все характеристики</a>
-                    <button class="button product__button">
-                      <span class="button__icon">+</span>
-                    </button>
-                  </div>
-                </div>
-                <p class="product__name">Газовые колонки<br>Ангара-Люкс</p>
-                <p class="product__vendor-code">Арт. 845-874-567</p>
-              </div>
+            <div class="catalogue__loader">
+              <button class="button button_theme_coal">
+                <span class="button__inner">Больше котлов</span>
+              </button>
             </div>
-            <div class="catalogue__item grid__col grid__col_4">
-              <div class="product">
-                <div class="product__tile">
-                  <div class="product__header">
-                    <hr class="product__line">
-                    <span class="product__label">Быстрый заказ</span>
-                  </div>
-                  <img class="product__image" src="./img/c-1.jpg" alt="">
-                  <div class="product__details">
-                    <ul class="list list_checklist product__list">
-                      <li class="list__item">открытая камера сгорания</li>
-                      <li class="list__item">отопительная площадь от 30-280 м2</li>
-                      <li class="list__item">газовый конвекционный котел</li>
-                      <li class="list__item">мощность 27.9 кВт</li>
-                      <li class="list__item">двухконтурный</li>
-                      <li class="list__item">КПД 90.3 %</li>
-                    </ul>
-                  </div>
-                  <div class="product__tools">
-                    <span class="product__price">12 452</span>
-                    <a class="link product__link" href="#">Все характеристики</a>
-                    <button class="button product__button">
-                      <span class="button__icon">+</span>
-                    </button>
-                  </div>
-                </div>
-                <p class="product__name">Nike MINI 28 kW<br>Special</p>
-                <p class="product__vendor-code">Арт. 845-874-567</p>
-              </div>
-            </div>
-            <div class="catalogue__item grid__col grid__col_4">
-              <div class="product">
-                <div class="product__tile">
-                  <div class="product__header">
-                    <hr class="product__line">
-                    <span class="product__label">Быстрый заказ</span>
-                  </div>
-                  <img class="product__image" src="./img/c-2.jpg" alt="">
-                  <div class="product__details">
-                    <ul class="list list_checklist product__list">
-                      <li class="list__item">открытая камера сгорания</li>
-                      <li class="list__item">отопительная площадь от 30-280 м2</li>
-                      <li class="list__item">газовый конвекционный котел</li>
-                      <li class="list__item">мощность 27.9 кВт</li>
-                      <li class="list__item">двухконтурный</li>
-                      <li class="list__item">КПД 90.3 %</li>
-                    </ul>
-                  </div>
-                  <div class="product__tools">
-                    <span class="product__price">12 452</span>
-                    <a class="link product__link" href="#">Все характеристики</a>
-                    <button class="button product__button">
-                      <span class="button__icon">+</span>
-                    </button>
-                  </div>
-                </div>
-                <p class="product__name">Напольные котлы<br>Ангара-Люкс</p>
-                <p class="product__vendor-code">Арт. 845-874-567</p>
-              </div>
-            </div>
-            <div class="catalogue__item grid__col grid__col_4">
-              <div class="product">
-                <div class="product__tile">
-                  <div class="product__header">
-                    <hr class="product__line">
-                    <span class="product__label">Быстрый заказ</span>
-                  </div>
-                  <img class="product__image" src="./img/c-3.jpg" alt="">
-                  <div class="product__details">
-                    <ul class="list list_checklist product__list">
-                      <li class="list__item">открытая камера сгорания</li>
-                      <li class="list__item">отопительная площадь от 30-280 м2</li>
-                      <li class="list__item">газовый конвекционный котел</li>
-                      <li class="list__item">мощность 27.9 кВт</li>
-                      <li class="list__item">двухконтурный</li>
-                      <li class="list__item">КПД 90.3 %</li>
-                    </ul>
-                  </div>
-                  <div class="product__tools">
-                    <span class="product__price">12 452</span>
-                    <a class="link product__link" href="#">Все характеристики</a>
-                    <button class="button product__button">
-                      <span class="button__icon">+</span>
-                    </button>
-                  </div>
-                </div>
-                <p class="product__name">Газовые колонки<br>Ангара-Люкс</p>
-                <p class="product__vendor-code">Арт. 845-874-567</p>
-              </div>
-            </div>
-            <div class="catalogue__item grid__col grid__col_4">
-              <div class="product">
-                <div class="product__tile">
-                  <div class="product__header">
-                    <hr class="product__line">
-                    <span class="product__label">Быстрый заказ</span>
-                  </div>
-                  <img class="product__image" src="./img/c-1.jpg" alt="">
-                  <div class="product__details">
-                    <ul class="list list_checklist product__list">
-                      <li class="list__item">открытая камера сгорания</li>
-                      <li class="list__item">отопительная площадь от 30-280 м2</li>
-                      <li class="list__item">газовый конвекционный котел</li>
-                      <li class="list__item">мощность 27.9 кВт</li>
-                      <li class="list__item">двухконтурный</li>
-                      <li class="list__item">КПД 90.3 %</li>
-                    </ul>
-                  </div>
-                  <div class="product__tools">
-                    <span class="product__price">12 452</span>
-                    <a class="link product__link" href="#">Все характеристики</a>
-                    <button class="button product__button">
-                      <span class="button__icon">+</span>
-                    </button>
-                  </div>
-                </div>
-                <p class="product__name">Nike MINI 28 kW<br>Special</p>
-                <p class="product__vendor-code">Арт. 845-874-567</p>
-              </div>
-            </div>
-            <div class="catalogue__item grid__col grid__col_4">
-              <div class="product">
-                <div class="product__tile">
-                  <div class="product__header">
-                    <hr class="product__line">
-                    <span class="product__label">Быстрый заказ</span>
-                  </div>
-                  <img class="product__image" src="./img/c-2.jpg" alt="">
-                  <div class="product__details">
-                    <ul class="list list_checklist product__list">
-                      <li class="list__item">открытая камера сгорания</li>
-                      <li class="list__item">отопительная площадь от 30-280 м2</li>
-                      <li class="list__item">газовый конвекционный котел</li>
-                      <li class="list__item">мощность 27.9 кВт</li>
-                      <li class="list__item">двухконтурный</li>
-                      <li class="list__item">КПД 90.3 %</li>
-                    </ul>
-                  </div>
-                  <div class="product__tools">
-                    <span class="product__price">12 452</span>
-                    <a class="link product__link" href="#">Все характеристики</a>
-                    <button class="button product__button">
-                      <span class="button__icon">+</span>
-                    </button>
-                  </div>
-                </div>
-                <p class="product__name">Напольные котлы<br>Ангара-Люкс</p>
-                <p class="product__vendor-code">Арт. 845-874-567</p>
-              </div>
-            </div>
-            <div class="catalogue__item grid__col grid__col_4">
-              <div class="product">
-                <div class="product__tile">
-                  <div class="product__header">
-                    <hr class="product__line">
-                    <span class="product__label">Быстрый заказ</span>
-                  </div>
-                  <img class="product__image" src="./img/c-3.jpg" alt="">
-                  <div class="product__details">
-                    <ul class="list list_checklist product__list">
-                      <li class="list__item">открытая камера сгорания</li>
-                      <li class="list__item">отопительная площадь от 30-280 м2</li>
-                      <li class="list__item">газовый конвекционный котел</li>
-                      <li class="list__item">мощность 27.9 кВт</li>
-                      <li class="list__item">двухконтурный</li>
-                      <li class="list__item">КПД 90.3 %</li>
-                    </ul>
-                  </div>
-                  <div class="product__tools">
-                    <span class="product__price">12 452</span>
-                    <a class="link product__link" href="#">Все характеристики</a>
-                    <button class="button product__button">
-                      <span class="button__icon">+</span>
-                    </button>
-                  </div>
-                </div>
-                <p class="product__name">Газовые колонки<br>Ангара-Люкс</p>
-                <p class="product__vendor-code">Арт. 845-874-567</p>
-              </div>
-            </div>
-          </div>
-          <div class="catalogue__loader">
-            <button class="button button_theme_coal">
-              <span class="button__inner">Больше котлов</span>
-            </button>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+    
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.waypoints.min.js"></script>
   
-  //= order-form/order-form.html
-  //= footer/footer.html
-  //= menu/menu.html
+    //= order-form/order-form.html
+    //= footer/footer.html
+    //= menu/menu.html
+  </div>
 
   <div class="popup__wrapper">
     <div class="popup grid">
@@ -357,6 +363,16 @@
       <button class="button popup__closer"></button>
     </div>
   </div>
+
+  <script type="text/javascript">
+    $(function () {
+      'use strict';
+      $('.popup__closer').on('click', function (event) {
+        $('.popup__wrapper').fadeOut();
+        $('.page__content').removeClass('page__content_blur');
+      });
+    });
+  </script>
 
 </body>
 </html>

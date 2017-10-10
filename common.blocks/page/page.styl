@@ -5,9 +5,14 @@ $fontColor = #343637
   margin 0
   padding 0
   color $fontColor
-  font 16px 'Lato', sans-serif
+  font 16px $fontLato
   &_fixed
     position fixed
+  &__content
+    width 100%
+    display block
+    &_blur
+      filter url('#blur')
   &__menu-trigger
     top 300px
     right -63px
