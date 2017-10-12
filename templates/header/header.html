@@ -1,0 +1,42 @@
+<header class="header">
+  <div class="header__inner">
+    <div class="grid__col grid__col_4">
+      <img class="logo header__logo" src="./img/logo.png" alt="Logo">
+    </div>
+    <div class="grid__col grid__col_8">
+      <ul class="list header__list">
+        <li class="list__item">
+          <span>г. Ростов-на-Дону,</span><br>
+          <span>пр. Аксайский, 14, пав. 1Л</span>
+        </li>
+        <li class="list__item">
+          <a class="link link_tel" href="tel:+78632767734">+7 (863) 276-77-34</a><br>
+          <a class="link link_tel" href="tel:+79282702511">+7 (928) 270-25-11</a>
+        </li>
+        <li class="list__item">
+          <span>без выходных:</span><br>
+          <span>c 09:00 до 17:00</span>
+        </li>
+        <li class="list__item">
+          <i class="icon icon_basket header__basket-icon"></i>
+          <span>корзина</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<script type="text/javascript">
+  $(function () {
+    'use strict';
+    var $header = $('.header');
+    new Waypoint({
+      element: '#slider',
+      handler: function (direction) {
+        if (direction === 'down') $header.addClass('header_coal');
+        else if (direction === 'up') $header.removeClass('header_coal');
+      },
+      offset: -20
+    });
+  });
+</script>

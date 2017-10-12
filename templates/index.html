@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title></title>
+  <title>Главная - Газовое оборудование</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="./css/index.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.min.css">
+
+  <script>var amo_forms_params = {"id":219715,"hash":"7ddd4e406330e77456df4134271a1c3f","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
 
   <script type="text/javascript" src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/jquery.waypoints.min.js"></script>
   
 </head>
 <body class="page">
-
+  
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="position: absolute;opacity: 0">
     <filter id="blur">
       <feGaussianBlur stdDeviation="8"/>
@@ -20,12 +23,42 @@
 
   <div class="page__content">
     <div id="slider" class="slider">
-      <div class="slider__item">
+      <div class="slider__item slider__item_active">
         <img class="slider__image" src="./img/s-1.jpg" alt="">
         <div class="slider__content grid">
           <div class="grid__offset grid__offset_1">
             <h1 class="slider__title">Зима. Холод.<br>Нету горячей воды.</h1>
             <p class="slider__description">Звучит как самый ужасный день?<br>Забудьте о ужасных днях, вместе с<br>нашими  котлами!</p>
+            <button class="button button_theme_snow">Выбрать котел</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="./img/s-1.jpg" alt="">
+        <div class="slider__content grid">
+          <div class="grid__offset grid__offset_1">
+            <h1 class="slider__title">Slide 2</h1>
+            <p class="slider__description">Звучит как самый ужасный день?<br>Забудьте о ужасных днях, вместе с<br>нашими  котлами!</p>
+            <button class="button button_theme_snow">Выбрать котел</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="./img/s-1.jpg" alt="">
+        <div class="slider__content grid">
+          <div class="grid__offset grid__offset_1">
+            <h1 class="slider__title">Slide 3</h1>
+            <p class="slider__description">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.<br>Debitis rem facere doloribus </p>
+            <button class="button button_theme_snow">Выбрать котел</button>
+          </div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <img class="slider__image" src="./img/s-1.jpg" alt="">
+        <div class="slider__content grid">
+          <div class="grid__offset grid__offset_1">
+            <h1 class="slider__title">Slide 4</h1>
+            <p class="slider__description">Delectus, reiciendis ipsum itaque placeat,<br> eveniet perferendis vel molestiae impedit magnam.<br> Sapiente, distinctio. Laboriosam accusamus <br>odio architecto minus.</p>
             <button class="button button_theme_snow">Выбрать котел</button>
           </div>
         </div>
@@ -38,6 +71,61 @@
       </div>
       <a class="link link_location slider__location" href="#">Ростов-на-Дону</a>
     </div>
+
+<script type="text/javascript">
+  $(function () {
+    'use strict';
+    var slider = {
+      defaults: {
+        active: 0,
+        prev: 0,
+        src: '.slider'
+      },
+      init: function (options) {
+        $.extend(this, this.defaults, options || {});
+        this.$el = $(this.src || this.el).first();
+        this.$items = this.$el.find('.slider__item');
+        this.$match = this.$el.find('.slider__match');
+        this.count = this.$items.length;
+        return this;
+      },
+      switch: function (number) {
+        number = number % this.count;
+        this.prev = this.active;
+        this.active = number;
+        this.$items.eq(this.prev).removeClass('slider__item_active');
+        this.$match.eq(this.prev).removeClass('slider__match_active');
+        this.$items.eq(this.active).addClass('slider__item_active');
+        this.$match.eq(this.active).addClass('slider__match_active');
+        return this;
+      },
+      start: function () {
+        var self = this;
+        this.timeId = setInterval(function () {
+          self.switch(self.active + 1);
+        }, 7000);
+        return this;
+      },
+      stop: function () {
+        this.timeId && clearInterval(this.timeId);
+        return this;
+      }
+    };
+
+    slider.init().start();
+
+    $(window).blur(function (event) {
+      slider.stop();
+    });
+    $(window).focus(function (event) {
+      slider.stop().start();
+    });
+
+    window.slider = slider;
+
+  });  
+</script>
+
     <main class="main grid">
       <div class="main__bg"></div>
       <div class="main__inner grid__row">
@@ -352,53 +440,12 @@
         </div>
       </div>
     </main>
-    <header class="header">
-      <div class="header__layout"></div>
-      <div class="header__inner">
-        <div class="grid__col grid__col_4">
-          <img class="logo header__logo" src="./img/logo.png" alt="Logo">
-        </div>
-        <div class="grid__col grid__col_8">
-          <ul class="list header__list">
-            <li class="list__item">
-              <span>г. Ростов-на-Дону,</span><br>
-              <span>пр. Аксайский, 14, пав. 1Л</span>
-            </li>
-            <li class="list__item">
-              <a class="link link_tel" href="tel:+78632767734">+7 (863) 276-77-34</a><br>
-              <a class="link link_tel" href="tel:+79282702511">+7 (928) 270-25-11</a>
-            </li>
-            <li class="list__item">
-              <span>без выходных:</span><br>
-              <span>c 09:00 до 17:00</span>
-            </li>
-            <li class="list__item">
-              <i class="icon icon_basket header__basket-icon"></i>
-              <span>корзина</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    //= header/header.html
     //= order-form/order-form.html
     //= footer/footer.html
   </div>
-    //= menu/menu.html
 
-  <script type="text/javascript">
-    $(function () {
-      'use strict';
-      var $header = $('.header');
-      new Waypoint({
-        element: '#slider',
-        handler: function (direction) {
-          if (direction === 'down') $header.addClass('header_coal');
-          else if (direction === 'up') $header.removeClass('header_coal');
-        },
-        offset: -20
-      });
-    });
-  </script>
+  //= menu/menu.html
 
 </body>
 </html>

@@ -1,142 +1,114 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title></title>
+  <title>Статьи - Газовое оборудование</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="./css/articles.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.min.css">
 
   <script type="text/javascript" src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/jquery.waypoints.min.js"></script>
-
+  
 </head>
 <body class="page">
 
-  <div class="slider">
-    <div class="slider__item">
-      <img class="slider__image" src="./img/s-1.jpg" alt="">
-      <div class="slider__content grid">
-        <div class="grid__row grid__row_middle">
-          <div class="grid__col grid__col_4">
-            <img class="logo slider__logo" src="./img/logo.png" alt="Logo">
-          </div>
-          <div class="grid__col grid__col_8">
-            <ul class="list slider__list">
-              <li class="list__item">
-                <span>г. Ростов-на-Дону,</span><br>
-                <span>пр. Аксайский, 14, пав. 1Л</span>
-              </li>
-              <li class="list__item">
-                <a class="link link_tel" href="tel:+78632767734">+7 (863) 276-77-34</a><br>
-                <a class="link link_tel" href="tel:+79282702511">+7 (928) 270-25-11</a>
-              </li>
-              <li class="list__item">
-                <span>без выходных:</span><br>
-                <span>c 09:00 до 17:00</span>
-              </li>
-              <li class="list__item">
-                <i class="icon"></i><br>
-                <span>корзина</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="grid__offset grid__offset_1">
-          <h1 class="slider__title">Зима. Холод.<br>Нету горячей воды.</h1>
-          <p class="slider__description">Звучит как самый ужасный день?<br>Забудьте о ужасных днях, вместе с<br>нашими  котлами!</p>
-          <button class="button button_theme_snow">Выбрать котел</button>
-        </div>
-      </div>
-    </div>
-    <div class="slider__pointers">
-      <span class="slider__match slider__match_active"></span>
-      <span class="slider__match"></span>
-      <span class="slider__match"></span>
-      <span class="slider__match"></span>
-    </div>
-  </div>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="position: absolute;opacity: 0">
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </svg>
 
-  <main class="main grid">
-    <div class="main__bg"></div>
-    <div class="main__inner grid__row">
-      <div class="grid__col grid__col_3">
-        //= sidebar/sidebar.html
-      </div>
-      <div class="grid__col grid__col_9">
-        <div class="grid">
-          <div class="article article_preview_row grid__row grid__row_middle">
-            <div class="grid__col grid__col_4">
-              <img class="article__pic" src="./img/a-1.jpg" alt="">
+  <div class="page__content">
+
+    <div id="slider" class="banner banner_bg_1">
+      <ul class="list breadcrumbs banner__breadcrumbs">
+        <li class="breadcrumbs__item"><a class="link breadcrumbs__link" href="/">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="link breadcrumbs__link" href="/articles">Статьи</a></li>
+      </ul>
+    </div>
+    <main class="main grid">
+      <div class="main__bg"></div>
+      <div class="main__inner grid__row">
+        <div class="grid__col grid__col_3">
+          //= sidebar/sidebar.html
+        </div>
+
+        <div class="grid__col grid__col_9">
+          <div class="grid">
+            <div class="article article_preview_row grid__row grid__row_middle">
+              <div class="grid__col grid__col_4">
+                <img class="article__pic" src="./img/a-1.jpg" alt="">
+              </div>
+              <div class="grid__col grid__col_8">
+                <h4 class="article__title">Immergas или Bosh?</h4>
+                <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
+              </div>
             </div>
-            <div class="grid__col grid__col_8">
-              <h4 class="article__title">Immergas или Bosh?</h4>
-              <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
+            <div class="article article_preview_row grid__row grid__row_middle">
+              <div class="grid__col grid__col_4">
+                <img class="article__pic" src="./img/a-2.jpg" alt="">
+              </div>
+              <div class="grid__col grid__col_8">
+                <h4 class="article__title">Как выбрать газовый котел для дома</h4>
+                <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
+              </div>
             </div>
-          </div>
-          <div class="article article_preview_row grid__row grid__row_middle">
-            <div class="grid__col grid__col_4">
-              <img class="article__pic" src="./img/a-2.jpg" alt="">
+            <div class="article article_preview_row grid__row grid__row_middle">
+              <div class="grid__col grid__col_4">
+                <img class="article__pic" src="./img/a-1.jpg" alt="">
+              </div>
+              <div class="grid__col grid__col_8">
+                <h4 class="article__title">Immergas или Bosh?</h4>
+                <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
+              </div>
             </div>
-            <div class="grid__col grid__col_8">
-              <h4 class="article__title">Как выбрать газовый котел для дома</h4>
-              <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
+            <div class="article article_preview_row grid__row grid__row_middle">
+              <div class="grid__col grid__col_4">
+                <img class="article__pic" src="./img/a-2.jpg" alt="">
+              </div>
+              <div class="grid__col grid__col_8">
+                <h4 class="article__title">Как выбрать газовый котел для дома</h4>
+                <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
+              </div>
             </div>
-          </div>
-          <div class="article article_preview_row grid__row grid__row_middle">
-            <div class="grid__col grid__col_4">
-              <img class="article__pic" src="./img/a-1.jpg" alt="">
+            <div class="article article_preview_row grid__row grid__row_middle">
+              <div class="grid__col grid__col_4">
+                <img class="article__pic" src="./img/a-1.jpg" alt="">
+              </div>
+              <div class="grid__col grid__col_8">
+                <h4 class="article__title">Immergas или Bosh?</h4>
+                <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
+              </div>
             </div>
-            <div class="grid__col grid__col_8">
-              <h4 class="article__title">Immergas или Bosh?</h4>
-              <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
+            <div class="page__loader">
+              <button class="button button_theme_coal">
+                <span class="button__inner">Все новости</span>
+              </button>
             </div>
-          </div>
-          <div class="article article_preview_row grid__row grid__row_middle">
-            <div class="grid__col grid__col_4">
-              <img class="article__pic" src="./img/a-2.jpg" alt="">
-            </div>
-            <div class="grid__col grid__col_8">
-              <h4 class="article__title">Как выбрать газовый котел для дома</h4>
-              <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
-            </div>
-          </div>
-          <div class="article article_preview_row grid__row grid__row_middle">
-            <div class="grid__col grid__col_4">
-              <img class="article__pic" src="./img/a-1.jpg" alt="">
-            </div>
-            <div class="grid__col grid__col_8">
-              <h4 class="article__title">Immergas или Bosh?</h4>
-              <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации. <a class="link article__link" href="#">Читать дальше</a></p>
-            </div>
-          </div>
-          <div class="page__loader">
-            <button class="button button_theme_coal">
-              <span class="button__inner">Все новости</span>
-            </button>
-          </div>
-          <div class="grid__row">
-            <div class="grid__col grid">
-              <h3 class="page__subtitle">Рекомендуемые новости</h3>
-              <div class="grid__row">
-                <div class="grid__col grid__col_4">
-                  <div class="article article_preview_tile">
-                    <img class="article__pic article__pic_full" src="./img/a-1.jpg" alt="">
-                    <h4 class="article__title article__title_pad">Immergas или Bosh?</h4>
-                    <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации.</p>
+            <div class="grid__row">
+              <div class="grid__col grid">
+                <h3 class="page__subtitle">Рекомендуемые новости</h3>
+                <div class="grid__row">
+                  <div class="grid__col grid__col_4">
+                    <div class="article article_preview_tile">
+                      <img class="article__pic article__pic_full" src="./img/a-1.jpg" alt="">
+                      <h4 class="article__title article__title_pad">Immergas или Bosh?</h4>
+                      <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="grid__col grid__col_4">
-                  <div class="article article_preview_tile">
-                    <img class="article__pic article__pic_full" src="./img/a-2.jpg" alt="">
-                    <h4 class="article__title article__title_pad">Как выбрать газовый котел для дома</h4>
-                    <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации.</p>
+                  <div class="grid__col grid__col_4">
+                    <div class="article article_preview_tile">
+                      <img class="article__pic article__pic_full" src="./img/a-2.jpg" alt="">
+                      <h4 class="article__title article__title_pad">Как выбрать газовый котел для дома</h4>
+                      <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации.</p>
+                    </div>
                   </div>
-                </div>
-                <div class="grid__col grid__col_4">
-                  <div class="article article_preview_tile">
-                    <img class="article__pic article__pic_full" src="./img/a-1.jpg" alt="">
-                    <h4 class="article__title article__title_pad">Immergas или Bosh?</h4>
-                    <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации.</p>
+                  <div class="grid__col grid__col_4">
+                    <div class="article article_preview_tile">
+                      <img class="article__pic article__pic_full" src="./img/a-1.jpg" alt="">
+                      <h4 class="article__title article__title_pad">Immergas или Bosh?</h4>
+                      <p class="article__preview">Товарищи! укрепление и развитие структуры влечет за собой процесс внедрения и модернизации.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -144,10 +116,12 @@
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  //= order-form/order-form.html
-  //= footer/footer.html
+    </main>
+    //= header/header.html
+    //= order-form/order-form.html
+    //= footer/footer.html
+  </div>
+
   //= menu/menu.html
 
 </body>

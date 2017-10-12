@@ -29,3 +29,13 @@
     & > .list__item
       margin-right 2em
       display inline-block
+  &__button
+    padding-right 1em
+    position relative
+    &:after
+      content '^'
+      top 1px
+      right 0
+      display block
+      position absolute
+      transform rotate(180deg)

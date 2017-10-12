@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title></title>
+  <title>Статьи - Газовое оборудование</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="./css/catalogue.min.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./css/main.min.css">
 
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.waypoints.min.js"></script>
+  
 </head>
 <body class="page">
 
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="position: absolute;opacity: 0;">
     <filter id="blur">
-      <feGaussianBlur stdDeviation="5"/>
+      <feGaussianBlur stdDeviation="8"/>
     </filter>
   </svg>
 
   <div class="page__content page__content_blur">
+
+    <div id="slider" class="banner banner_bg_2">
+      <ul class="list breadcrumbs banner__breadcrumbs">
+        <li class="breadcrumbs__item"><a class="link breadcrumbs__link" href="/">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="link breadcrumbs__link" href="/catalogue.html">Каталог</a></li>
+      </ul>
+    </div>
     <main class="main grid">
       <div class="main__bg"></div>
       <div class="main__inner grid__row">
@@ -329,50 +340,13 @@
         </div>
       </div>
     </main>
-    
-  <script type="text/javascript" src="./js/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/jquery.waypoints.min.js"></script>
-  
+    //= header/header.html
     //= order-form/order-form.html
     //= footer/footer.html
-    //= menu/menu.html
   </div>
 
-  <div class="popup__wrapper">
-    <div class="popup grid">
-      <div class="popup__content grid__row">
-        <div class="grid__col grid__col_6">
-          <form class="form">
-            <h3 class="form__title">Быстрый заказ</h3>
-            <p class="form__paragraph">Достаточно заполнить данные и мы<br>перезвоним вам для уточнения вашего заказа</p>
-            <input class="input form__input" type="text" name="name" placeholder="Имя">
-            <input class="input form__input" type="tel" name="name" placeholder="Телефон">
-            <div class="checkbox form__checkbox">
-              <input class="checkbox__input" id="popup-privacy-policy" type="checkbox" name="privacy-policy">
-              <label class="checkbox__label" for="popup-privacy-policy">Я принимаю условия<br>пользовательского соглашения.</label>
-            </div>
-            <button class="button button_theme_coal">
-              <span class="button__inner">Заказать</span>
-            </button>
-          </form>
-        </div>
-        <div class="grid__col grid__col_6">
-          <img class="image image_cover" src="../img/little-boy.jpg" alt="">
-        </div>
-      </div>
-      <button class="button popup__closer"></button>
-    </div>
-  </div>
-
-  <script type="text/javascript">
-    $(function () {
-      'use strict';
-      $('.popup__closer').on('click', function (event) {
-        $('.popup__wrapper').fadeOut();
-        $('.page__content').removeClass('page__content_blur');
-      });
-    });
-  </script>
+  //= menu/menu.html
+  //= offer/offer.html
 
 </body>
 </html>
