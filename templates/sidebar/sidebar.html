@@ -164,7 +164,7 @@
     var $menu = $('.menu'),
         $header = $('.header'),
         $content = $('.page__content');
-    $('.page__menu-trigger').on('click', function (event) {
+    $('.page__menu-trigger, .slider__menu-trigger').on('click', function (event) {
       $header.css('display', 'none');
       $content.addClass('page__content_blur');
       $menu.fadeIn();
