@@ -3,18 +3,19 @@
   &__item
     padding 0 1em
     float left
+    cursor default
     display block
     position relative
+    line-height 1.4
     &:not(:last-of-type)
       &:after
         content '/'
-        top 3px
+        top 0
         right 0
         display block
         position absolute
         transform translateX(50%)
   &__link
-    line-height 1.4
     text-align center
     transition color .3s cubic-bezier(0.11, 0.7, 0, 1)
     position relative
